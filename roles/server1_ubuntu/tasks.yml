@@ -1,0 +1,12 @@
+---
+- name: Install Nagios (server1_ubuntu)
+  tags: nagios, server1
+  apt:
+    name:
+      - nagios4
+      - nagios-plugins
+      - nagios4-core
+      - apache2
+    update_chache: yes
+    state: present
+  when: ansible_distribution == "Ubuntu"

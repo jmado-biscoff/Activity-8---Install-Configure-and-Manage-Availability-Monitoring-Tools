@@ -1,0 +1,8 @@
+[server1_ubuntu]
+192.168.56.109
+
+[server2_ubuntu]
+192.168.56.108
+
+[server3_centos]
+192.168.56.110

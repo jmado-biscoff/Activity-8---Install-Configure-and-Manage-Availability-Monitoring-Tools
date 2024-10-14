@@ -1,0 +1,9 @@
+---
+- name: install nagios (server3_centos)
+  dnf:
+    name:
+      - nagios
+      - nagios-plugins-all
+      - httpd
+    state: present
+  when: ansible_distribution == "CentOS"
